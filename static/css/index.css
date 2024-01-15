@@ -8,6 +8,9 @@ h1 {
     color : blue;
 }
 
+#nomtitre {
+    font-size: 3.5em;
+}
 
 .rdev-icon-navbar {
     max-width : 22px;
@@ -333,5 +336,26 @@ hr.gradient {
 }
 
 
+* {box-sizing: border-box}
 
+.containerskills {
+  width: 65%;
+  background-color: #ddd;
+  border-radius:10px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.skills{border-radius: 10px;}
+
+.web {width: 90%; background-color: #A4C3EA;height: 100%;}
+.sql {width: 80%; background-color: #488E89;height: 15px;}
+.scripts {width: 70%; background-color: #A4C3EA;height: 15px;}
+.php {width: 60%; background-color: #488E89;height: 15px;}
+
+.policeraleway{
+    text-align: center;
+    color: #ddd !important
+    ;
+}
