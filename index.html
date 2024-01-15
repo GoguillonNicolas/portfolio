@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+            <link rel="stylesheet" id="cssCaller" href="/static/css/mdb.min.css"/>
+
+            <script>
+                function getPreferredColorScheme() {
+                    var elements = document.getElementsByClassName("color-list");
+
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        console.log("dark onload")
+                        return 'dark';
+                    } else {
+                        console.log("light onload")
+                        return 'light';
+                    }
+                }
+
+                var colorScheme = getPreferredColorScheme();
+                var link = document.getElementById("link-theme");
+                if (colorScheme === "dark") {
+                    document.getElementById("cssCaller").href = "/static/css/mdb.dark.min.css";
+                } else {
+                    document.getElementById("cssCaller").href = "/static/css/mdb.min.css";
+
+                }
+
+            </script>
+
+
+
+        
+
+        <title>Renatech-Dev</title>
+    
+</head>
+<body>
+<!-- Your page content -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light gradient-custom sticky-top ">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+
+                <!-- Left links -->
+                <img src="/static/images/favicon-navbar.png"
+                     height="15"
+                     alt="MDB Logo"
+                     loading="lazy"
+                     style="width: 2em; height: auto; padding-right: 5px;"
+                />
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold">Renatech-Dev</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <a class="text-reset me-3" id="link-theme" onclick="toggleGlobalTheme()">
+                    <i class="fas fa-circle-half-stroke"></i>
+                </a>
+
+                <div class="dropdown">
+                    <a
+                            href="https://www.renatech.org/"
+                            target="_blank"
+                    >
+                        <img
+                                src="/static/images/favicon-renatech.png"
+                                height="15"
+                                alt="MDB Logo"
+                                loading="lazy"
+                                style="width: 2em; height: auto; padding-right: 5px;"
+                        />
+                    </a>
+                    <a
+                            href="https://www.cnrs.fr/"
+                            target="_blank"
+                    >
+                        <img
+                                src="/static/images/cnrs-logo.png"
+                                height="15"
+                                alt="MDB Logo"
+                                loading="lazy"
+                                style="width: 2em; height: auto; padding-right: 5px;"
+                        />
+                    </a>
+
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+
+
+    <div class="mb-8" id="landscape-spacing"></div>
+    <div class="container rdev-containers d-flex flex-column justify-content-center mb-6" id="rdev-prez">
+        <div class="bloc_message">
+            
+                
+            
+        </div>
+        <div class="container rdev-containers d-flex flex-column justify-content-center mb-2"
+             id="rdev-prez-translucent">
+            
+            <img
+                    src="/static/images/light-favicon.png"
+                    height="15"
+                    alt="MDB Logo"
+                    loading="lazy"
+                    class="mb-7 d-flex justify-content-center"
+                    id="translucent-logo"
+                    style="width: 50%; height: auto; margin-left: auto; margin-right: auto;"
+            />
+
+
+        </div>
+
+
+        
+        <div class="card-body" id="prez-text">Renatech-Dev is a team of web developers within the <a
+                href="https://www.renatech.org" style="font-weight: bold; color: #228f87" target="_blank">Renatech
+            network</a>, dedicated to improving the working conditions of researchers in various labs across the
+            network. The team works on a variety of projects aimed at streamlining research processes and enhancing
+            collaboration among scientists.
+        </div>
+        
+    </div>
+
+    <script>
+
+        function toggleGlobalTheme() {
+            let userPreference = getPreferredColorScheme();
+            var elements = document.getElementsByClassName("color-list");
+
+            if (document.getElementById("cssCaller").href === "https://dev-team.renatech.org/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5000/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "https://dev.renatech.org/static/css/mdb-auto.css") {
+                if (userPreference === "light") {
+                    console.log("user preferes light");
+                    document.getElementById("cssCaller").href = "/static/css/mdb.dark.min.css";
+                    for (var k = 0; k < elements.length; k++) {
+                        elements[k].style.color = "white";
+                    }
+
+                } else {
+                    console.log("user preferes dark");
+                    document.getElementById("cssCaller").href = "/static/css/mdb.min.css";
+                    for (var l = 0; l < elements.length; l++) {
+                        elements[l].style.color = "black";
+                    }
+                }
+            } else if (document.getElementById("cssCaller").href === "https://dev-team.renatech.org/static/css/mdb.dark.min.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5000/static/css/mdb.dark.min.css") {
+                console.log("css is mdb dark min");
+                document.getElementById("cssCaller").href = "/static/css/mdb.min.css";
+                for (var m = 0; m < elements.length; m++) {
+                    elements[m].style.color = "black";
+                }
+            } else {
+                document.getElementById("cssCaller").href = "/static/css/mdb.dark.min.css";
+                console.log("css is mdb min");
+                for (var n = 0; n < elements.length; n++) {
+                    elements[n].style.color = "white";
+                }
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+    <!-- POPUPS PROJETS -->
+
+    <div class="modal fade" id="repotech-details" tabindex="-1" aria-labelledby="RepotechDetailsLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RepotechDetailsLabel">REPOTECH</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="projet-image-details"
+                         src="/static/images/repotechFrontPage.png" alt="">
+                    <p>On the user interface, any registered user can send requests for projects, feasibilities, manage
+                        their pending requests and projects, contact administrator for anything, and much more.</p>
+                    <img class="projet-image-details"
+                         src="/static/images/RepotechAdminPage.png" alt="">
+                    <p>On the administrator side, all admins can access to informations, depending on their role,
+                        including project management, pending requests, users list...<br><br>Every information can be
+                        extracted from website to a tab file format like XLSX or CSV.<br><br>
+                        This application is used by all laboratories within the Renatech Network. <br><br>The app is
+                        also able to generate stats and graphics about various data related to its database.</p>
+                    <br>
+                    <p><strong>In 2023, the REPOTECH app counts : </strong></p>
+                    <ul class="list-group list-group-light stat-list">
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Users :
+                            <span class="badge badge-primary rounded-pill">3 500+</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Projects submitted in 2022 :
+                            <span class="badge badge-primary rounded-pill">300</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Pending projects in 2022 :
+                            <span class="badge badge-primary rounded-pill">920</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Projects submitted since the first deployment :
+                            <span class="badge badge-primary rounded-pill">2 300+</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Projects with foreign partners :
+                            <span class="badge badge-primary rounded-pill">680</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cross-details" tabindex="-1" aria-labelledby="CrossDetailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CrossDetailsLabel">CROSS</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <img class="projet-image-details"
+                         src="/static/images/cross-logo.png" alt="">
+                    <p>On the clean room side, any registered user can access to tools they have right to use. The
+                        system will record the products and duration of the experiment.</p>
+                    <img class="projet-image-details"
+                         src="/static/images/RepotechAdminPage.png" alt="">
+                    <p>On the administrator side, all admins can access to information, depending on their role,
+                        including logs, experiments duration, prices, users...</p>
+                    <p>Every information can be extracted from website to a tab file format like XLSX or CSV.</p>
+                    <p>In 2023, the CROSS app will manage : </p>
+                    <ul class="list-group list-group-light stat-list">
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Boxes
+                            <span class="badge badge-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Tools
+                            <span class="badge badge-primary rounded-pill">50</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center color-list">
+                            Operation by year
+                            <span class="badge badge-primary rounded-pill">30 000</span>
+                        </li>
+                    </ul>
+                    <p><br>Currently, this project is in production in the IEMN lab in Villeneuve d'Ascq.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cross-video" tabindex="-1" aria-labelledby="CrossVideoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CrossVideoLabel">CROSS</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <div class="ratio ratio-16x9" id="cross-video">
+                        <iframe
+                                src="/static/videos/cross.mp4"
+                                title="YouTube video"
+                                allowfullscreen
+                                id="video-frame"
+                        ></iframe>
+                    </div>
+                    <br>
+
+                    <br><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="modal fade" id="repo-video" tabindex="-1" aria-labelledby="CrossVideoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CrossVideoLabel">CROSS</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <div class="ratio ratio-16x9" id="repo-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/evKQL5izSlk?si=mK7jSFyRKgEGM5e5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <br>
+
+                    <br><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="cross-poster" tabindex="-1" aria-labelledby="CrossPosterLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CrossPosterLabel">CROSS</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="projet-image" id="poster-image-cross"
+                         src="/static/images/poster.png" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="publi-details" tabindex="-1" aria-labelledby="PubliDetailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PubliDetailsLabel">Publis-HAL</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Coming soon !</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="mb-4" id="projects">
+        <!-- Gradient divider -->
+
+
+        <!--Section: News of the day-->
+        <div class="row gx-5" style="width: 60%; margin-left: 20%; margin-right: 20%;">
+            <div class="col-md-6 mb-4" id="news-img">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                    <img src="/static/images/cc.jpg" class="img-fluid"/>
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" id="news-text">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News for the team</span>
+                <h4><strong>Our REPOTECH project received a "Cristal collectif 2023" from the CNRS</strong></h4>
+                <p class="text-muted">
+                    REPOTECH, the scientific project management application developed by our team, has just been awarded
+                    the prestigious prize from CNRS "Cristal collectif 2023". This prize rewards innovative group
+                    projects that contribute to scientific research. To find out more about this award, follow the links
+                    below:
+                </p>
+                <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                   data-mdb-target="#repotech-details">
+                    <button class="btn btn-primary"> Project</button>
+                </a>
+                <a href="https://www.cnrs.fr/fr/personne/cristal-collectif-2023" class="card-link"
+                   style="padding-left:5px;">
+                    <button class="btn btn-primary"> Official announcement</button>
+                </a>
+
+            </div>
+        </div>
+
+        <!--Section: News of the day-->
+
+
+    </div>
+    <hr class="gradient">
+
+    <h2 class="gradient-custom-text title-rdev" id="title-rdev" style="text-align:center; width:auto">OUR PROJECTS</h2>
+    <hr class="gradient">
+
+    <div class="container rdev-containers d-flex flex-column justify-content-center" id="rdev-membres">
+        <div class="card-deck d-flex flex-wrap justify-content-center">
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">REPOTECH</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Renatech network project management
+                        tool</h6>
+                    <img class="projet-image" src="/static/images/repotechFrontPage.png"
+                         alt="">
+                    <p class="card-text">The REPOTECH application gives the ability to users to manage their projects,
+                        make requests depending on what they need... it also allows administrators of the Renatech
+                        network's facilities to manage project requests, feasibility studies, user profiles, network
+                        statistics, and more. Its user-friendly interface and powerful features make it an indispensable
+                        tool for efficiently managing the network's projects and resources.</p>
+                    <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#repotech-details"><i class="fas fa-info"></i> More info</a>
+                    <a href="#repo-video" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#repo-video"><i class="far fa-circle-play"></i> Video </a>
+                </div>
+            </div>
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">CROSS</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Clean ROom Service Support</h6>
+                    <img class="projet-image" id="projet-image-cross"
+                         src="/static/images/box01.jpg" alt="">
+                    <p class="card-text"><br>CROSS is a solution to log operation inside the cleanroom. It's composed of
+                        two
+                        parts, a box to collect the user's need in the clean room (tools, project, ...) and a
+                        website to consult the operations performed. Boxes in use are presented in the video or their
+                        workflow in the poster.<br><br></p>
+                    <a href="#cross-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#cross-details"><i class="fas fa-info"></i> More info </a>
+                    <a href="#cross-video" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#cross-video"><i class="far fa-circle-play"></i> Video </a>
+                    <a href="#cross-poster" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#cross-poster"><i class="fas fa-file-contract"></i> Poster </a></div>
+            </div>
+        </div>
+        <div class="card-deck d-flex flex-wrap justify-content-center">
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Publis-HAL</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle"> Display HAL references </h6>
+                    <img class="projet-image" src="/static/images/publis-accueil.png"
+                         alt="Publis-HAL">
+                    <p class="card-text"><br>Publis-HAL is a website to display the references of a laboratory from HAL.
+                        It allows to make some research inside all the references or to display one of the most
+                        pre-build
+                        group of reference like all the reference of a research team.</p>
+                    <a href="#publi-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#publi-details"><i class="fas fa-info"></i> More info</a>
+                    <a href="https://publis.iemn.fr/#/" class="card-link"><i class="fas fa-globe"></i> IEMN - Publis-HAL </a>
+                </div>
+            </div>
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">You need our products ? You have any idea ?</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Get in touch with the Renatech-Dev team
+                        !</h6>
+                    <img class="projet-image" src="/static/images/bloc4.png" alt="">
+                    <p class="card-text"><br>You have any special need, any idea about one of our projects or even a
+                        brand new one ? We're always open to suggestions and discussion, so reach us for anything !<br>
+                    </p>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact us</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="mb-4" id="team">
+        <!-- Gradient divider -->
+    </div>
+    <hr class="gradient">
+
+    <h2 class="gradient-custom-text title-rdev" id="title-rdev" style="text-align:center; width:auto">OUR TEAM</h2>
+    <hr class="gradient">
+
+    <div class="container rdev-containers d-flex flex-column justify-content-center" id="rdev-membres">
+        <div class="card-deck d-flex flex-wrap justify-content-center">
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Benjamin LECHA</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Project leader, <br>Research Engineer</h6>
+                    <img class="member-image rounded-circle"
+                         src="/static/images/benjamin.png" alt="">
+                    <p class="card-text">Build simple and efficient software for research</p><br>
+                    <a href="https://www.linkedin.com/in/benjamin-lecha/" class="card-link" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Billel GUERBOUKHA</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">DevOps engineer in apprenticeship,
+                        engineering student</h6>
+                    <img class="member-image rounded-circle" src="/static/images/billel.png"
+                         alt="">
+                    <p class="card-text">"Develops like an artist, deploys like an engineer."</p><br>
+                    <a href="https://www.linkedin.com/in/789309167/" class="card-link" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Nicolas GOGUILLON</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Assistant ingeener, <br>Software developer
+                    </h6>
+                    <img class="member-image rounded-circle"
+                         src="/static/images/nicolas.png" alt="">
+                    <p class="card-text">"Programmers are tools for converting caffeine into code."</p>
+                    <a href="https://nicolasgoguillon.github.io" class="card-link" target="_blank"><i
+                            class="fas fa-link"></i> Portfolio</a>
+                    <a href="https://www.linkedin.com/in/nicolas-goguillon/" class="card-link" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck d-flex flex-wrap justify-content-center">
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Dino EL HANI</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Assistant ingeener, <br>Software developer
+                    </h6>
+                    <img class="member-image rounded-circle" src="/static/images/dino.png"
+                         alt="">
+                    <p class="card-text">Best at pull-ups in the office.</p>
+                    <a href="https://www.linkedin.com/in/dino-elh/" class="card-link" target="_blank"><br><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Christophe BOYAVAL</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Study engineer in instrumentation, expert
+                        in Scanning Electron Microscopy.</h6>
+                    <img class="member-image rounded-circle"
+                         src="/static/images/christophe.png" alt="">
+                    <p class="card-text">Bored to do administrative tasks.</p>
+                    <a href="https://www.linkedin.com/in/christophe-boyaval-992548211/" class="card-link"
+                       target="_blank"><br><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Join us !</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Interested in working with us ? <br> Let's
+                        get in touch !</h6>
+                    <img class="member-image rounded-circle"
+                         src="/static/images/favicon.png" alt="" style="height:10rem;width: auto">
+                    <p class="card-text">Leave us a message on our website and we will come back to you shortly.</p>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact us</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="card-deck d-flex flex-wrap justify-content-center">
+
+         
+
+            
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Buttons trigger collapse -->
+    <div class="container rdev-containers mb-8">
+        <a
+                class="btn btn-primary expandable-members position-relative top-50 start-50 translate-middle gradient-custom"
+                data-mdb-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+        >
+            Our old members
+        </a>
+
+        <!-- Collapsed content -->
+        <div class="collapse mt-3" id="collapseExample">
+            <div class="card-deck d-flex flex-wrap justify-content-center">
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Philippe DUBOIS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Project leader</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/philippe.png" alt="">
+                        <p class="card-text">"Hello there."</p>
+                    </div>
+                </div>
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Florian "Selfie" LETERTRE</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/florian.jpg" alt="">
+                        <p class="card-text">"Information: J'ai une voiture."</p>
+                        <a href="https://www.linkedin.com/in/florian-letertre-27a113160/" class="card-link"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Simon ALBERIC</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/simon.jpeg" alt="">
+                        <p class="card-text">"Computer yep yep"</p>
+                        <a href="https://www.linkedin.com/in/simon-alberic-108872200/" class="card-link"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-deck d-flex flex-wrap justify-content-center">
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Julien PRONIER</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development,
+                            student
+                            for an University Technology Diploma</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/julien.png"
+                             alt="">
+                        <p class="card-text"><br>"Real knowledge is to know the extent of one's ignorance."
+                            Socrate<br><br></p>
+                        <a href="https://www.linkedin.com/in/julien-pronier/" class="card-link" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Yoan DECONINCK</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development,
+                            student
+                            for an Professional title of Developer/Designer</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/yoan.png"
+                             alt="">
+                        <p class="card-text"><br>Young application designer and developer in the making doing it's best
+                            to make
+                            good applications.<br><br></p>
+                        <a href="https://www.linkedin.com/in/yoan-deconinck-b5b5731a0/" class="card-link"
+                           target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Lucie CAUDRON</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development,
+                            student
+                            for a Professional Bachelor's Degree</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/lucie.png"
+                             alt="">
+                        <p class="card-text">"The art of organization in software development transcends the boundaries
+                            of
+                            code, creating a masterpiece of understanding for those who unite in the symphony of
+                            collaboration."</p>
+                        <a href="https://www.linkedin.com/in/lucie-caudron/" class="card-link" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-deck d-flex flex-wrap justify-content-center">
+                <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title member-title">Antoine LEVA</h5>
+                        <h6 class="card-subtitle mb-2 text-muted member-subtitle">Intern in software development,
+                            student
+                            for a Professional Bachelor's Degree</h6>
+                        <img class="member-image rounded-circle"
+                             src="/static/images/antoine.png"
+                             alt="" style="width: 10%;">
+                        <p class="card-text"><br>“There are 10 types of people in the world: those who understand binary
+                            and
+                            those who don’t.”<br><br></p>
+                        <a href="http://antoine-leva.fr/" target="_blank" class="card-link"><i class="fas fa-link"></i>
+                            Portfolio</a>
+                        <a href="https://www.linkedin.com/in/antoine-leva-695b64226/" class="card-link" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mb-4" id="contact">
+        <!-- Gradient divider -->
+    </div>
+    <hr class="gradient">
+
+    <h2 class="gradient-custom-text title-rdev" id="title-rdev" style="text-align:center; width:auto">GET IN TOUCH WITH
+        US !</h2>
+    <hr class="gradient">
+    <div class="mb-8"></div>
+    <h3 id="sendmailtext">You have any special need, any question, any idea about one of our projects or even a brand new one ? We're always open to suggestions and discussion, so reach us for anything !
+</h3>
+
+            <a
+                class="btn btn-primary expandable-members position-relative top-50 start-50 translate-middle gradient-custom"
+                href="mailto:dev-team@renatech.org"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+        >
+            Send an email
+        </a>
+
+        <div class="text-center">
+            <div class="spinner-border" role="status" id="spinner" style="display:none">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-opacity-10 text-muted gradient-custom-footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5" style="width: 100% !important;">
+                <!-- Grid row -->
+                <div class="row mt-3" style="width: 100% !important;">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="width: 30% !important;">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Renatech-Dev
+                        </h6>
+                        <p>
+                            Renatech-Dev is a team composed by CNRS staff that realise projects for the Renatech
+                            Network.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+                         style="width: 30% !important; text-align: center;">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Projects
+                        </h6>
+                        <p>
+                            <a href="#repotech-details" class="text-reset" data-mdb-toggle="modal"
+                               data-mdb-target="#repotech-details">REPOTECH</a>
+                        </p>
+                        <p>
+                            <a href="#cross-details" class="text-reset" data-mdb-toggle="modal"
+                               data-mdb-target="#cross-details">CROSS</a>
+                        </p>
+                        <p>
+                            <a href="#publi-details" class="text-reset" data-mdb-toggle="modal"
+                               data-mdb-target="#publi-details">Publis-HAL</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="width: 40% !important; ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i>IEMN, 59650 Villeneuve-d'Ascq (France)</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            dev-team@renatech.org
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +33 3 20 19 79 91</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2020-2024 Copyright: Renatech-Dev
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/mdb.min.js"></script>
+    <sript src="/static/js/index.js"></sript>
+
+
+    <script src="/static/js/index.js"></script>
+
+</body>
+</html>
