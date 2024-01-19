@@ -74,7 +74,7 @@ background-color: #A9C5EC;
 }
 
 .projet-image {
-    width : 80%;
+    width : 55%;
     margin : 5% 10% 5% 10%;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -281,6 +281,7 @@ background-color: #A9C5EC;
 
     /* Définition de la couleur du texte pour les navigateurs qui ne prennent pas en charge la propriété background-clip */
     color: #fff;
+    font-size: 3rem !important;
 }
 
 .gradient-custom-footer {
@@ -337,9 +338,9 @@ background-color: #A9C5EC;
 .skills{border-radius: 10px;}
 
 .web {width: 90%; background-color: #A4C3EA;height: 100%;}
-.sql {width: 80%; background-color: #488E89;height: 15px;}
+.sql {width: 80%; background-color: #5B80B6;height: 15px;}
 .scripts {width: 70%; background-color: #A4C3EA;height: 15px;}
-.php {width: 60%; background-color: #488E89;height: 15px;}
+.php {width: 60%; background-color: #5B80B6;height: 15px;}
 
 .policeraleway{
     text-align: center;
