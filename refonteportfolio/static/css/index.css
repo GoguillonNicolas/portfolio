@@ -1,0 +1,353 @@
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color : blue;
+}
+
+#nomtitre {
+    font-size: 3.5em;
+}
+
+.rdev-icon-navbar {
+    max-width : 22px;
+    margin: auto;
+}
+
+.rdev-prez {
+    font-size : 1.5em;
+    margin-top : 100px !important;
+    width: 50% !important;
+}
+
+.rdev-containers {
+    margin-top : 50px !important;
+}
+
+.rdev-containers-titles {
+    font-size : 1.5em;
+    margin-bottom : 50px;
+    text-align : center;
+}
+
+.member-image {
+    width : 30%;
+    /*margin : 5% 25% 5% 25%;*/
+    vertical-align : baseline;
+}
+
+/*.member-title {
+    width : 70%
+}
+
+.member-subtitle {
+    width : 70%
+}*/
+
+.member-card {
+    text-align: center;
+}
+
+.expandable-members {
+
+}
+
+.title-rdev {
+    font-size : 4em;
+    /*margin-bottom : 50px;*/
+    text-align : center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr.gradient {
+  height: 3px;
+  border: none;
+background-color: #A9C5EC;
+
+}
+
+.modal-body p {
+    text-align: center;
+}
+
+.projet-image {
+    width : 55%;
+    margin : 5% 10% 5% 10%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projet-image-details {
+    width : 50%;
+    margin : 5% 25% 5% 25%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#rdev-projets {
+    text-align: justify;
+}
+
+.project-card-rdev {
+    padding: 1.5%
+}
+
+#prez-text {
+    font-size : 1.2em;
+    margin-top : 50px;
+    margin-bottom : 50px;
+    text-align : center;
+}
+
+#prez-card {
+    border : 0 !important;
+    background-color: transparent !important;
+}
+
+/*#news-text {
+    border-radius: 5px;
+    border: 3px solid red;
+}
+
+#news-img {
+    border-radius: 5px;
+    border: 3px solid red;
+}*/
+
+.navbar {
+  min-height: 40px;
+    font-size: 1.2em;
+}
+
+.separator {
+    border: 5px;
+}
+
+#cross-video {
+    width : 60%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 20% 0 20%;
+}
+
+#video-frame {
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.stat-list {
+    width : 40%;
+    margin: 0 30% 0 30%;
+}
+
+@media screen and (orientation: portrait) {
+
+    .stat-list {
+        width : 90%;
+        margin: 0 5% 0 5%;
+    }
+
+
+    #prez-img {
+        width : 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom : 5%;
+    }
+
+    #landscape-spacing {
+        display : none;
+    }
+
+    #translucent-logo {
+        width: 100%; height: auto; margin-left: auto; margin-right: auto;
+    }
+
+    .title-rdev {
+        font-size : 2em;
+        /*margin-bottom : 50px;*/
+        text-align : center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+        hr.hr-text {
+      position: relative;
+        border: none;
+        height: 1px;
+        background: #252525;
+        font-size: 1.4em;
+        text-align: center;
+
+    }
+
+    hr.hr-text::before {
+        content: attr(data-content);
+        display: inline-block;
+        background: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #252525;
+        border-radius: 30rem;
+        padding: 0.2rem 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .projet-image-details {
+        width : 90%;
+        margin : 5% 5% 5% 5%;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+/* styles pour l'affichage en mode paysage */
+@media screen and (orientation: landscape) {
+    #prez-img {
+        width : 65%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom : 5%;
+    }
+
+    #title-rdev {
+        font-size : 5em;
+        /*margin-bottom : 50px;*/
+        text-align : center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #translucent-logo {
+        width: 50%; height: auto; margin-left: auto; margin-right: auto;
+    }
+
+    hr.hr-text {
+      position: relative;
+        border: none;
+        height: 1px;
+        background: #252525;
+        font-size: 3em;
+                text-align: center;
+
+    }
+
+    hr.hr-text::before {
+        content: attr(data-content);
+        display: inline-block;
+        background: #fff;
+        font-size: 3rem;
+        color: #252525;
+        border-radius: 30rem;
+        padding: 0.2rem 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+                text-align: center;
+
+    }
+}
+
+
+
+
+
+
+/*gradient properties*/
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #accbee;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,  rgba(109, 174, 249, 0.7), #4b7db7);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(109, 174, 249, 0.7), #4b7db7)
+  }
+
+.gradient-custom-text {
+    /* Définition du gradient */
+    background: linear-gradient(to right, #A0AEBE, rgb(122, 177, 239));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Définition de la couleur du texte pour les navigateurs qui ne prennent pas en charge la propriété background-clip */
+    color: #fff;
+    font-size: 3rem !important;
+}
+
+.gradient-custom-footer {
+    /* fallback for old browsers */
+    background: #7ab1ef;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(109, 174, 249, 0.7), #4b7db7);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,  rgba(109, 174, 249, 0.7), #4b7db7)
+  }
+
+
+
+
+/*dark properties*/
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode-on-cards {
+        --mdb-bg-opacity:1;background-color:transparent!important
+    }
+
+    .dark-mode-on-footer {
+        --mdb-bg-opacity:0.1
+    }
+
+}
+
+#sendmail {
+    text-align : center;
+    width : 20%;
+    margin: 50px auto;
+}
+
+#sendmailtext {
+    text-align : center;
+    width : 50%;
+    margin: 50px auto;
+}
+
+
+* {box-sizing: border-box}
+
+.containerskills {
+  width: 65%;
+  background-color: #ddd;
+  border-radius:10px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills{border-radius: 10px;}
+
+.web {width: 90%; background-color: #A4C3EA;height: 100%;}
+.sql {width: 80%; background-color: #5B80B6;height: 15px;}
+.scripts {width: 70%; background-color: #A4C3EA;height: 15px;}
+.php {width: 60%; background-color: #5B80B6;height: 15px;}
+
+.policeraleway{
+    text-align: center;
+    color: #ddd !important
+    ;
+}
+
+.footertext {
+    color: #4B5C75;
+}
