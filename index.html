@@ -23,10 +23,8 @@
                     var elements = document.getElementsByClassName("color-list");
 
                     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                        console.log("dark onload")
                         return 'dark';
                     } else {
-                        console.log("light onload")
                         return 'light';
                     }
                 }
@@ -159,21 +157,18 @@
 
             if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.io/portfolio/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5500/index.html/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "https://dev.renatech.org/static/css/mdb-auto.css") {
                 if (userPreference === "light") {
-                    console.log("user preferes light");
                     document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
                     for (var k = 0; k < elements.length; k++) {
                         elements[k].style.color = "white";
                     }
 
                 } else {
-                    console.log("user preferes dark");
                     document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
                     for (var l = 0; l < elements.length; l++) {
                         elements[l].style.color = "black";
                     }
                 }
             } else if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.io/portfolio/static/css/mdb.dark.min.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5000/static/css/mdb.dark.min.css") {
-                console.log("css is mdb dark min");
                 document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
                 for (var m = 0; m < elements.length; m++) {
                     elements[m].style.color = "black";
@@ -181,7 +176,6 @@
             } else {
                 document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
                 document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
-                console.log("css is mdb min");
                 for (var n = 0; n < elements.length; n++) {
                     elements[n].style.color = "white";
                 }
