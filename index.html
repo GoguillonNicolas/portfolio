@@ -5,8 +5,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" type="image/x-icon" href="/refonteportfolio/images/iconfox1.png">
-        <link rel="stylesheet" type="text/css" href="/refonteportfolio/static/css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/portfolio/images/iconfox1.png">
+        <link rel="stylesheet" type="text/css" href="/portfolio/static/css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-            <link rel="stylesheet" id="cssCaller" href="/refonteportfolio/static/css/mdb.min.css"/>
+            <link rel="stylesheet" id="cssCaller" href="/portfolio/static/css/mdb.min.css"/>
 
             <script>
                 function getPreferredColorScheme() {
@@ -34,9 +34,9 @@
                 var colorScheme = getPreferredColorScheme();
                 var link = document.getElementById("link-theme");
                 if (colorScheme === "dark") {
-                    document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.dark.min.css";
+                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
                 } else {
-                    document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.min.css";
+                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
 
                 }
 
@@ -74,7 +74,7 @@
                 <!-- Navbar brand -->
 
                 <!-- Left links -->
-                <img src="/refonteportfolio/images/iconfox1.png"
+                <img src="/portfolio/images/iconfox1.png"
                      height="15"
                      alt="MDB Logo"
                      loading="lazy"
@@ -130,7 +130,7 @@
              id="rdev-prez-translucent">
             
             <img
-                    src="/refonteportfolio/images/profile.png"
+                    src="/portfolio/images/profile.png"
                     height="15"
                     alt="MDB Logo"
                     loading="lazy"
@@ -160,26 +160,26 @@
             if (document.getElementById("cssCaller").href === "https://dev-team.renatech.org/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5000/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "https://dev.renatech.org/static/css/mdb-auto.css") {
                 if (userPreference === "light") {
                     console.log("user preferes light");
-                    document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.dark.min.css";
+                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
                     for (var k = 0; k < elements.length; k++) {
                         elements[k].style.color = "white";
                     }
 
                 } else {
                     console.log("user preferes dark");
-                    document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.min.css";
+                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
                     for (var l = 0; l < elements.length; l++) {
                         elements[l].style.color = "black";
                     }
                 }
             } else if (document.getElementById("cssCaller").href === "https://dev-team.renatech.org/static/css/mdb.dark.min.css" || document.getElementById("cssCaller").href === "http://127.0.0.1:5000/static/css/mdb.dark.min.css") {
                 console.log("css is mdb dark min");
-                document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.min.css";
+                document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
                 for (var m = 0; m < elements.length; m++) {
                     elements[m].style.color = "black";
                 }
             } else {
-                document.getElementById("cssCaller").href = "/refonteportfolio/static/css/mdb.dark.min.css";
+                document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
                 console.log("css is mdb min");
                 for (var n = 0; n < elements.length; n++) {
                     elements[n].style.color = "white";
@@ -213,6 +213,23 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="coming-soon" tabindex="-1" aria-labelledby="RepotechDetailsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="comingsoon"></h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1 style="color: #A9C5EC;">Coming soon !</h1>  
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
     
     <div class="modal fade" id="cross-video" tabindex="-1" aria-labelledby="CrossVideoLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
@@ -225,7 +242,7 @@
                     <br>
                     <div class="ratio ratio-16x9" id="cross-video">
                         <iframe
-                                src="/refonteportfolio/static/videos/cross.mp4"
+                                src="/portfolio/static/videos/cross.mp4"
                                 title="YouTube video"
                                 allowfullscreen
                                 id="video-frame"
@@ -288,11 +305,11 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Renatech-Dev</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">2022 - Aujourd'hui</h6>
-                    <img class="projet-image" src="/refonteportfolio/images/iemn.jpeg"
+                    <img class="projet-image" src="/portfolio/images/iemn.jpeg"
                          alt="">
                     <p class="card-text"><br>Depuis 2022, je travaille au sein de l'équipe Renatech-Dev en tant qu'assistant ingénieur développeur.</p>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
-                       data-mdb-target="#repotech-details"><i class="fas fa-info"></i> Plus d'informations</a>
+                       data-mdb-target="#repotech-details"><i class="fas fa-info"></i> Plus d'info</a>
                        <a href="https://dev.renatech.org" class="card-link" target="_blank"><i class="fas fa-globe"></i> Site de l'équipe</a>
                 </div>
             </div>
@@ -300,11 +317,11 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">DUT Informatique</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle"> 2020 - 2022</h6>
-                    <img class="projet-image" src="/refonteportfolio/images/iut.jpg"
+                    <img class="projet-image" src="/portfolio/images/iut.jpg"
                          alt="Publis-HAL">
                     <p class="card-text"><br>In nulla commodo nostrud veniam ad ad consectetur pariatur. Veniam eu mollit consequat veniam qui. Occaecat id veniam pariatur Lorem ea veniam ex irure fugiat. Nisi quis do tempor deserunt. Sint labore sunt in sit laborum. Proident excepteur dolor ea velit culpa in voluptate fugiat cillum magna ullamco qui. Ex non dolor aliqua incididunt sint ut amet.</p>
                     <a href="#publi-details" class="card-link" target="_blank" data-mdb-toggle="modal"
-                       data-mdb-target="#publi-details"><i class="fas fa-info"></i> Plus d'informations</a>
+                       data-mdb-target="#publi-details"><i class="fas fa-info"></i> Plus d'info</a>
                     <a href="https://www.iut-lens.univ-artois.fr/" class="card-link" target="_blank"><i class="fas fa-globe"></i> Site de l'IUT de Lens</a>
                 </div>
             </div>
@@ -367,23 +384,25 @@
             <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title member-title">Développement Web</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Aliqua pariatur consequat et dolore.</h6>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Outils essentiels au développement</h6>
                     <img class="member-image rounded-circle"
-                         src="/refonteportfolio/images/webstatic.jpg" alt="">
-                    <p class="card-text">Build simple and efficient software for research</p><br>
-                    <a href="https://www.linkedin.com/in/benjamin-lecha/" class="card-link" target="_blank"><i
-                            class="fab fa-linkedin"></i>Lien</a>
+                         src="/portfolio/images/webstatic.jpg" alt="">
+                    <p class="card-text"><Main>Maitrise des outils de développement et design web, tels que les langages HTML, CSS, Javascript, Bootstrap, Jinja...</Main></p><br>
+                    <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'info</a>
+
                 </div>
             </div>
             <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title member-title">Gestion de projet</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Aliqua pariatur consequat et dolore. Aliqua pariatur consequat et dolore. Aliqua pariatur consequat et dolore.</h6>
-                    <img class="member-image rounded-circle" src="/refonteportfolio/images/webstatic.jpg"
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maîtrise des concepts et outils</h6>
+                    <img class="member-image rounded-circle" src="/portfolio/images/project management.png"
                          alt="">
-                    <p class="card-text">"Aliqua pariatur consequat et dolore."</p><br>
-                    <a href="https://www.google.com/" class="card-link" target="_blank"><i
-                            class="fab fa-linkedin"></i> Lien</a>
+                    <p class="card-text">Essentiels au travail en équipe sur un projet de développement, je maîtrise les concepts nécessaires à une bonne gestion de projets, tels que les méthodes agiles, mais aussi les outils informatiques essentiels tels que Git, Gitlab, Zulip...</p><br>
+                    <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'info</a>
+
                 </div>
             </div>
             
@@ -392,37 +411,43 @@
             <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title member-title">Gestion de bases de données</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Aliqua pariatur consequat et dolore.
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maîtrise de la création, gestion et modification
                     </h6>
-                    <img class="member-image rounded-circle" src="/refonteportfolio/images/webstatic.jpg"
+                    <img class="member-image rounded-circle" src="/portfolio/images/databaseicon.avif"
                          alt="">
-                    <p class="card-text">Aliqua pariatur consequat et dolore.</p>
-                    <a href="" class="card-link" target="_blank"><br><i
-                            class="fab fa-link"></i> Lien</a>
+                    <p class="card-text">Maitrise du langage SQL, des outils de modélisation, de gestion (principalement postgreSQL), d'intégration Web (gestion d'API)...</p>
+                    <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'info</a>
+
                 </div>
             </div>
+
             <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title member-title">Autre compétence</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Aliqua pariatur consequat et dolore.</h6>
+                    <h5 class="card-title member-title">Pratiques DevOps</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">En cours d'apprentissage</h6>
                     <img class="member-image rounded-circle"
-                         src="/refonteportfolio/images/webstatic.jpg" alt="">
-                    <p class="card-text">Aliqua pariatur consequat et dolore.</p>
-                    <a href="" class="card-link"
-                       target="_blank"><br><i class="fab fa-link"></i> Lien</a>
+                         src="/portfolio/images/DevOps.jpg" alt="">
+                    <p class="card-text">Maitrise de Docker, pour le déploiement d'application. En cours de formation, au sein de mon équipe, à la maîtrise essentielle des outils DevOps utiles au déploiement et gestion système d'application, à savoir maîtrise des images Docker, intégration continue...</p>
+                    <a href="#" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'info</a>
+
+                </div>
+            </div>
+
+            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title member-title">Transfert des compétences</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maître de stage</h6>
+                    <img class="member-image rounded-circle"
+                         src="/portfolio/images/webstatic.jpg" alt="">
+                    <p class="card-text">Dans le cadre de mon travail, j'ai pris en charge a deux reprises un stagiaire, que j'ai dû former et encadrer au sein de ntore équipe sur l'application sur laquelle je suis développeur. J'ai dû apprendre et maîtriser les bonnes pratiques de formation et d'encadrement </p>
+                    <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'info</a>
+
                 </div>
             </div>
             
-            <div class="card border dark-mode-on-cards mb-3 member-card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title member-title">Autre compétence</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">Aliqua pariatur consequat et dolore.</h6>
-                    <img class="member-image rounded-circle"
-                         src="/refonteportfolio/images/webstatic.jpg" alt="">
-                    <p class="card-text">Aliqua pariatur consequat et dolore.</p>
-                    <a href="#contact"><i class="fas fa-link"></i> Lien</a>
-                </div>
-            </div>
 
 
 
@@ -546,11 +571,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/refonteportfolio/static/js/mdb.min.js"></script>
-    <sript src="/refonteportfolio/static/js/index.js"></sript>
+    <script type="text/javascript" src="/portfolio/static/js/mdb.min.js"></script>
+    <sript src="/portfolio/static/js/index.js"></sript>
 
 
-    <script src="/refonteportfolio/static/js/index.js"></script>
+    <script src="/portfolio/static/js/index.js"></script>
 
 </body>
 </html>
