@@ -275,12 +275,15 @@ body {
   
   .gradient-custom-text {
       /* Définition du gradient */
-      background: linear-gradient(to right, #A0AEBE, rgb(122, 177, 239));
+      background: linear-gradient(to right, #76e1b7, rgb(122, 177, 239));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   
       /* Définition de la couleur du texte pour les navigateurs qui ne prennent pas en charge la propriété background-clip */
       color: #fff;
+  }
+  
+  .size-for-title{
       font-size: 3rem !important;
   }
   
