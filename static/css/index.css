@@ -275,7 +275,7 @@ background-color: #A9C5EC;
 
 .gradient-custom-text {
     /* Définition du gradient */
-    background: linear-gradient(to right, #76e1b7, rgb(122, 177, 239));
+    background: linear-gradient(to right, #99eac9, rgb(143, 186, 235));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
