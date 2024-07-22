@@ -264,13 +264,13 @@ background-color: #A9C5EC;
 /*gradient properties*/
 .gradient-custom {
     /* fallback for old browsers */
-    background: #accbee;
+    background: #76e1b7;
 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right,  rgba(109, 174, 249, 0.7), #4b7db7);
+    background: -webkit-linear-gradient(to right,  rgba(109, 174, 249, 0.7), #76e1b7);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(109, 174, 249, 0.7), #4b7db7)
+    background: linear-gradient(to right, rgba(109, 174, 249, 0.7), #76e1b7)
   }
 
 .gradient-custom-text {
@@ -286,13 +286,13 @@ background-color: #A9C5EC;
 
 .gradient-custom-footer {
     /* fallback for old browsers */
-    background: #7ab1ef;
+    background: #76e1b7;
 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(109, 174, 249, 0.7), #4b7db7);
+    background: -webkit-linear-gradient(to right, rgba(109, 174, 249, 0.7), #76e1b7);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,  rgba(109, 174, 249, 0.7), #4b7db7)
+    background: linear-gradient(to right,  rgba(109, 174, 249, 0.7), #76e1b7)
   }
 
 
