@@ -267,15 +267,15 @@ body {
       background: #76e1b7;
   
       /* Chrome 10-25, Safari 5.1-6 */
-      background: -webkit-linear-gradient(to right,  rgba(109, 174, 249, 0.7), #76e1b7);
+      background: -webkit-linear-gradient(to right,  #50AEF8, #1BA399);
   
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      background: linear-gradient(to right, rgba(109, 174, 249, 0.7), #76e1b7)
+      background: linear-gradient(to right, #50AEF8, #1BA399)
     }
   
   .gradient-custom-text {
       /* Définition du gradient */
-      background: linear-gradient(to right, #99eac9, rgb(143, 186, 235));
+      background: linear-gradient(to right, #1BA399, #50AEF8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   
@@ -289,13 +289,13 @@ body {
   
   .gradient-custom-footer {
       /* fallback for old browsers */
-      background: #76e1b7;
+      background: #1BA399;
   
       /* Chrome 10-25, Safari 5.1-6 */
-      background: -webkit-linear-gradient(to right, rgba(109, 174, 249, 0.7), #76e1b7);
+      background: -webkit-linear-gradient(to right, #50AEF8, #1BA399);
   
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      background: linear-gradient(to right,  rgba(109, 174, 249, 0.7), #76e1b7)
+      background: linear-gradient(to right,  #50AEF8, #1BA399)
     }
   
   
