@@ -5,8 +5,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" type="image/x-icon" href="/portfolio/images/iconfox1.png">
-        <link rel="stylesheet" type="text/css" href="/portfolio/static/css/index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/iconfox1.png">
+        <link rel="stylesheet" type="text/css" href="static/css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-            <link rel="stylesheet" id="cssCaller" href="/portfolio/static/css/mdb.min.css"/>
+            <link rel="stylesheet" id="cssCaller" href="static/css/mdb.min.css"/>
 
             <script>
                 function getPreferredColorScheme() {
@@ -32,9 +32,9 @@
                 var colorScheme = getPreferredColorScheme();
                 var link = document.getElementById("link-theme");
                 if (colorScheme === "dark") {
-                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
+                    document.getElementById("cssCaller").href = "static/css/mdb.dark.min.css";
                 } else {
-                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
+                    document.getElementById("cssCaller").href = "static/css/mdb.min.css";
 
                 }
 
@@ -72,7 +72,7 @@
                 <!-- Navbar brand -->
 
                 <!-- Left links -->
-                <img src="/portfolio/images/iconfox1.png"
+                <img src="images/iconfox1.png"
                      height="15"
                      alt="MDB Logo"
                      loading="lazy"
@@ -93,7 +93,7 @@
                         <a class="nav-link" href="#contact">Get in touch</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/portfolio/">Version Française</a>
+                        <a class="nav-link" href="">Version Française</a>
                     </li>
 
 
@@ -131,7 +131,7 @@
              id="rdev-prez-translucent">
             
             <img
-                    src="/portfolio/images/profile.png"
+                    src="images/profile.png"
                     height="15"
                     alt="MDB Logo"
                     loading="lazy"
@@ -158,26 +158,26 @@
             let userPreference = getPreferredColorScheme();
             var elements = document.getElementsByClassName("color-list");
 
-            if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.io/portfolio/static/css/mdb-auto.css" || document.getElementById("cssCaller").href === "/portfolio/static/css/mdb-auto.css") {
+            if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.iostatic/css/mdb-auto.css" || document.getElementById("cssCaller").href === "static/css/mdb-auto.css") {
                 if (userPreference === "light") {
-                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
+                    document.getElementById("cssCaller").href = "static/css/mdb.dark.min.css";
                     for (var k = 0; k < elements.length; k++) {
                         elements[k].style.color = "white";
                     }
 
                 } else {
-                    document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
+                    document.getElementById("cssCaller").href = "static/css/mdb.min.css";
                     for (var l = 0; l < elements.length; l++) {
                         elements[l].style.color = "black";
                     }
                 }
-            } else if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.io/portfolio/static/css/mdb.dark.min.css" || document.getElementById("cssCaller").href === "/portfolio/static/css/mdb.dark.min.css") {
-                document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.min.css";
+            } else if (document.getElementById("cssCaller").href === "https://goguillonnicolas.github.iostatic/css/mdb.dark.min.css" || document.getElementById("cssCaller").href === "static/css/mdb.dark.min.css") {
+                document.getElementById("cssCaller").href = "static/css/mdb.min.css";
                 for (var m = 0; m < elements.length; m++) {
                     elements[m].style.color = "black";
                 }
             } else {
-                document.getElementById("cssCaller").href = "/portfolio/static/css/mdb.dark.min.css";
+                document.getElementById("cssCaller").href = "static/css/mdb.dark.min.css";
                 for (var n = 0; n < elements.length; n++) {
                     elements[n].style.color = "white";
                 }
@@ -293,7 +293,7 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Renatech-Dev</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">2022 - Today</h6>
-                    <img class="projet-image" src="/portfolio/images/iemn.jpeg"
+                    <img class="projet-image" src="images/iemn.jpeg"
                          alt="">
                     <p class="card-text"><br>Since 2022, I have been working within the Renatech-Dev team as an assistant developer engineer.</p>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
@@ -305,7 +305,7 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Associate's Degree (DUT) in computer science</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">2020 - 2022</h6>
-                    <img class="projet-image" src="/portfolio/images/iut.jpg"
+                    <img class="projet-image" src="images/iut.jpg"
                          alt="Publis-HAL">
                     <p class="card-text"><br>I studied at the IUT of Lens, where I obtained a DUT in computer science in two years. I acquired all the skills and knowledge necessary for my current activity. As part of an internship, I was also able to join Renatech-Dev, the team in which I still work today.</p>
                     <a href="#publi-details" class="card-link" target="_blank" data-mdb-toggle="modal"
@@ -374,7 +374,7 @@
                     <h5 class="card-title member-title">Web development</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Outils essentiels au développement</h6>
                     <img class="member-image rounded-circle"
-                         src="/portfolio/images/webstatic.jpg" alt="">
+                         src="images/webstatic.jpg" alt="">
                     <p class="card-text"><Main>Mastery of web development and design tools, such as HTML, CSS, Javascript, Bootstrap, Jinja, etc.</Main></p><br>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> More info</a>
@@ -385,7 +385,7 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Project management</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maîtrise des concepts et outils</h6>
-                    <img class="member-image rounded-circle" src="/portfolio/images/project management.png"
+                    <img class="member-image rounded-circle" src="images/project management.png"
                          alt="">
                     <p class="card-text">Essential for teamwork on a development project, I master the concepts necessary for good project management, such as agile methods, but also essential IT tools such as Git, Gitlab, Zulip...</p><br>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
@@ -401,7 +401,7 @@
                     <h5 class="card-title member-title">Database management</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maîtrise de la création, gestion et modification
                     </h6>
-                    <img class="member-image rounded-circle" src="/portfolio/images/databaseicon.avif"
+                    <img class="member-image rounded-circle" src="images/databaseicon.avif"
                          alt="">
                     <p class="card-text">Mastery of SQL language, modeling tools, management (mainly postgreSQL), Web integration (API management)...</p>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
@@ -415,7 +415,7 @@
                     <h5 class="card-title member-title">DevOps practices</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Learning</h6>
                     <img class="member-image rounded-circle"
-                         src="/portfolio/images/DevOps.jpg" alt="">
+                         src="images/DevOps.jpg" alt="">
                     <p class="card-text">Maîtrise de Docker, pour le déploiement d'application. En cours de formation, au sein de mon équipe, à la maîtrise essentielle des outils DevOps utiles au déploiement et gestion système d'application, à savoir maîtrise des images Docker, intégration continue...</p>
                     <a href="#" class="card-link" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
@@ -428,7 +428,7 @@
                     <h5 class="card-title member-title">Teaching my skills</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Internship supervisor</h6>
                     <img class="member-image rounded-circle"
-                         src="/portfolio/images/webstatic.jpg" alt="">
+                         src="images/webstatic.jpg" alt="">
                     <p class="card-text">As part of my work, on two occasions I took charge of an intern, whom I had to train and supervise within our team on the application on which I am a developer. I had to learn and master good training and supervision practices</p>
                     <a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
@@ -559,11 +559,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/portfolio/static/js/mdb.min.js"></script>
-    <sript src="/portfolio/static/js/index.js"></sript>
+    <script type="text/javascript" src="static/js/mdb.min.js"></script>
+    <sript src="static/js/index.js"></sript>
 
 
-    <script src="/portfolio/static/js/index.js"></script>
+    <script src="static/js/index.js"></script>
 
 </body>
 </html>
