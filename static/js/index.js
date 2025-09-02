@@ -19,13 +19,3 @@ for (var j = 0; j < elementsOnLoad.length; j++) {
 }
 
 }
-
-// Hide main theme icon when mobile navbar is opened
-$(function() {
-  $('#navbarSupportedContent').on('show.bs.collapse', function () {
-    $('#main-theme-icon-container').addClass('d-none');
-  });
-  $('#navbarSupportedContent').on('hide.bs.collapse', function () {
-    $('#main-theme-icon-container').removeClass('d-none');
-  });
-});

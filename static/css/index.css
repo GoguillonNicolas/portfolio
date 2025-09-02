@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Montserrat', sans-serif;
   }
@@ -358,3 +356,44 @@ body {
   .footertext {
       color: #4B5C75;
   }
+
+/* --- Google Translate Widget Styling --- */
+
+/* Target the main select dropdown */
+#google_translate_element .goog-te-gadget .goog-te-combo {
+    background-color: transparent !important; /* Make background transparent */
+    border: none !important; /* Remove border */
+    box-shadow: none !important; /* Remove shadow */
+    color: inherit !important; /* Inherit text color from parent (navbar links) */
+    font-size: 1em !important; /* Adjust font size */
+    padding: 0 5px !important; /* Adjust padding */
+    height: auto !important; /* Allow height to adjust */
+    line-height: normal !important; /* Reset line height */
+    vertical-align: middle !important; /* Align vertically */
+}
+
+/* Hide the "Powered by Google Translate" text */
+#google_translate_element .goog-te-gadget {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Ensure it takes full width to hide text */
+    height: 100%; /* Ensure it takes full height */
+}
+
+/* Make the select element text visible again */
+#google_translate_element .goog-te-gadget select {
+    color: inherit !important; /* Inherit color from parent */
+    font-size: inherit !important; /* Inherit font size */
+    line-height: initial !important;
+    height: initial !important;
+    width: initial !important;
+    background-color: initial !important;
+}
+
+/* Hide the Google Translate toolbar that appears at the top of the page */
+.goog-toolbar {
+    display: none !important;
+}
