@@ -397,9 +397,9 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Développement Web</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Outils essentiels au développement</h6>
-                    <img class="member-image rounded-circle"
+                    <br><img class="member-image rounded-circle"
                          src="images/webstatic.jpg" alt="">
-                    <p class="card-text"><Main>Maîtrise des outils de développement et design web, tels que les langages HTML, CSS, Javascript, Bootstrap, Jinja...</Main></p><br>
+                    <p class="card-text"><Main><br>Maîtrise des outils de développement et design web, tels que les langages HTML, CSS, Javascript, Bootstrap, Jinja...</Main></p><br>
                     <a href="#repotech-details" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
 
@@ -409,9 +409,9 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Gestion de projet</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Concepts et outils</h6>
-                    <img class="member-image rounded-circle" src="images/project management.png"
+                    <br><img class="member-image rounded-circle" src="images/project management.png"
                          alt="">
-                    <p class="card-text">Essentiels au travail en équipe sur un projet de développement, je maîtrise les concepts nécessaires à une bonne gestion de projets, telles que les méthodes agiles, mais aussi les outils informatiques essentiels tels que Git, Gitlab, Zulip...</p><br>
+                    <p class="card-text"><br>Essentiels au travail en équipe sur un projet de développement, je maîtrise les concepts nécessaires à une bonne gestion de projets, telles que les méthodes agiles, mais aussi les outils informatiques essentiels tels que Git, Gitlab, Zulip...</p><br>
                     <a href="#repotech-details" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
 
@@ -425,9 +425,9 @@
                     <h5 class="card-title member-title">Gestion de bases de données</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Création, gestion et modification
                     </h6>
-                    <img class="member-image rounded-circle" src="images/databaseicon.avif"
+                    <br><img class="member-image rounded-circle" src="images/databaseicon.avif"
                          alt="">
-                    <p class="card-text">Maîtrise du langage SQL, des outils de modélisation, de gestion (principalement postgreSQL), d'intégration Web (gestion d'API)...</p>
+                    <p class="card-text"><br><br>Maîtrise du langage SQL, des outils de modélisation, de gestion (principalement postgreSQL), d'intégration Web (gestion d'API)...<br><br><br></p>
                     <a href="#repotech-details" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
 
@@ -438,9 +438,9 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Pratiques DevOps</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">En cours d'apprentissage</h6>
-                    <img class="member-image rounded-circle"
+                    <br><img class="member-image rounded-circle"
                          src="images/DevOps.jpg" alt="">
-                    <p class="card-text">Maîtrise de Docker, pour le déploiement d'application. En cours de formation, au sein de mon équipe, aux compétences essentielles sur les outils DevOps utiles au déploiement et gestion système d'application, à savoir utilisation des images Docker, intégration continue...</p>
+                    <p class="card-text"><br>Maîtrise de Docker, pour le déploiement d'application. En cours de formation, au sein de mon équipe, aux compétences essentielles sur les outils DevOps utiles au déploiement et gestion système d'application, à savoir utilisation des images Docker, intégration continue...</p>
                     <a href="#" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
 
@@ -451,9 +451,9 @@
                 <div class="card-body">
                     <h5 class="card-title member-title">Transfert des compétences</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Maître de stage</h6>
-                    <img class="member-image rounded-circle"
+                    <br><img class="member-image rounded-circle"
                          src="images/webstatic.jpg" alt="">
-                    <p class="card-text">Dans le cadre de mon travail, j'ai pris en charge à deux reprises un stagiaire, que j'ai dû former et encadrer au sein de notre équipe sur l'application sur laquelle je suis développeur. J'ai dû apprendre et maîtriser les bonnes pratiques de formation et d'encadrement. </p>
+                    <p class="card-text"><br>Dans le cadre de mon travail, j'ai pris en charge à deux reprises un stagiaire, que j'ai dû former et encadrer au sein de notre équipe sur l'application sur laquelle je suis développeur. J'ai dû apprendre et maîtriser les bonnes pratiques de formation et d'encadrement. </p>
                     <a href="#repotech-details" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> Plus d'infos</a>
 
@@ -590,15 +590,7 @@
 
     <script src="static/js/index.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            var maxHeight = 0;
-            $(".member-card .card-body").each(function(){
-                if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
-            });
-            $(".member-card .card-body").height(maxHeight);
-        });
-    </script>
+    
 
     <script>
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {

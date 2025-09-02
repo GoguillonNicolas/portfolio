@@ -425,8 +425,8 @@
                     <h5 class="card-title member-title">Database management</h5>
                     <h6 class="card-subtitle mb-2 text-muted member-subtitle">Creation, management and modification
                     </h6>
-                    <img class="member-image rounded-circle" src="images/databaseicon.avif"
-                         alt="">
+                    <br><img class="member-image rounded-circle" src="images/databaseicon.avif"
+                         alt=""><br>
                     <p class="card-text">Mastery of SQL language, modeling, management tools (mainly postgreSQL), web integration (API management)...</p>
                     <a href="#repotech-details" class="card-link gradient-custom-text" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#coming-soon"><i class="fas fa-info"></i> More info</a>
@@ -590,15 +590,7 @@
 
     <script src="static/js/index.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            var maxHeight = 0;
-            $(".member-card .card-body").each(function(){
-                if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
-            });
-            $(".member-card .card-body").height(maxHeight);
-        });
-    </script>
+    
 
     <script>
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
