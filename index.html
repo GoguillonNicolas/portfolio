@@ -144,7 +144,7 @@
              id="rdev-prez-translucent">
             
             <img
-                    src="images/profile2.png"
+                    src="images/profile.png"
                     height="15"
                     alt="MDB Logo"
                     loading="lazy"
@@ -159,8 +159,8 @@
 
         <h2 class="gradient-custom-text size-for-title title-rdev" id="nomtitre" style="text-align:center; width:auto">NICOLAS GOGUILLON</h2>
 
-        <div class="card-body" id="prez-text">Diplômé d’un DUT informatique, je suis depuis deux ans assistant ingénieur, et lead développeur au sein de la plateforme <a
-            href="https://dev.renatech.org" class="gradient-custom-text" style="font-weight: bold;" target:"_blank">CROW</a>, basée à l’IEMN, à Villeneuve d’Ascq. Je me suis spécialisé en développement web en Python, avec comme framework de prédilection Python-Flask. 
+        <div class="card-body" id="prez-text">Diplômé d’un DUT informatique, j'ai été trois ans assistant ingénieur, et responsable technique au sein de la plateforme <a
+            href="https://dev.renatech.org" class="gradient-custom-text" style="font-weight: bold;" target:"_blank">CROW</a>, basée à l’IEMN, à Villeneuve d’Ascq. Je me suis spécialisé en développement web en Python, avec comme framework de prédilection Python-Flask. Depuis Septembre 2025, je suis devenu apprenti concepteur et développeur d'application au sein de cette même plateforme, tout en rejoignant la formation bachelor 3 développeur web à MyDigitalSchool.
         </div>
         
     </div>
@@ -306,11 +306,24 @@
         <div class="card-deck d-flex flex-wrap justify-content-center">
             <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
                 <div class="card-body">
+                    <h5 class="card-title member-title">Alternance Bachelor 3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">2025 - 2026</h6>
+                    <img class="projet-image" src="images/MDSLOGO.jpg"
+                         alt="">
+                    <p class="card-text"><br>En 2025, j'ai rejoint en 3e année la formation en alternance de développement Web de MyDigitalSchool, afin de parfaire mes compétences tout en restant responsable technique de l'application REPOTECH au sein de la plateforme CROW. <br><br><br></p>
+                    <!--<a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
+                       data-mdb-target="#repotech-details"><i class="fas fa-info"></i> Plus d'infos</a>-->
+                       <a href="https://www.mydigitalschool.com/bachelor-developpeur-digital-web" class="card-link gradient-custom-text" target="_blank"><i class="fas fa-globe"></i> La formation</a>
+                </div>
+            </div>
+            
+            <div class="card border mb-3 member-card dark-mode-on-cards" style="width: 18rem;">
+                <div class="card-body">
                     <h5 class="card-title member-title">CROW</h5>
-                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">2022 - Aujourd'hui</h6>
+                    <h6 class="card-subtitle mb-2 text-muted member-subtitle">2022 - 2025</h6>
                     <img class="projet-image" src="images/iemn.jpeg"
                          alt="">
-                    <p class="card-text"><br>Depuis 2022, je travaille au sein de la plateforme CROW en tant qu'assistant ingénieur développeur. CROW est une plateforme de développement travaillant pour le réseau Renatech. Son objectif est d'améliorer les conditions de travail des chercheurs. Actuellement basée à l'IEMN de Villeneuve-d'Ascq, elle est en charge du développement et du maintien de diverses applications contribuant à rationnaliser les processus de recherche.</p>
+                    <p class="card-text"><br>De 2022 à 2025, j'ai travaillé au sein de la plateforme CROW (Conception pour RENATECH d'Outils Web) en tant qu'assistant ingénieur développeur. Basée à l'IEMN de Villeneuve-d'Ascq, CROW est en charge du développement et du maintien de diverses applications contribuant à rationnaliser les processus de recherche.<br><br></p>
                     <!--<a href="#repotech-details" class="card-link" target="_blank" data-mdb-toggle="modal"
                        data-mdb-target="#repotech-details"><i class="fas fa-info"></i> Plus d'infos</a>-->
                        <a href="https://dev.renatech.org" class="card-link gradient-custom-text" target="_blank"><i class="fas fa-globe"></i> Site de l'équipe</a>
@@ -324,7 +337,7 @@
                          alt="Publis-HAL">
                     <br><p class="card-text"><br>J'ai étudié a l'IUT de Lens, où j'ai obtenu en deux ans un DUT informatique. J'y ai acquis toutes les compétences et connaissances nécessaires a mon activité actuelle. Dans le cadre d'un stage, j'ai également pu rejoindre Renatech-Dev, l'équipe dans laquelle je travaille toujours aujourd'hui.<br><br><br></p>
                     <a href="https://goguillonnicolas.github.io/old-portfolio/index.html" class="card-link gradient-custom-text" target="_blank"
-                       ><i class="fas fa-info"></i> Portfolio étudiant et projets scolaires</a>
+                       ><i class="fas fa-info"></i> Portfolio étudiant</a>
                     <a href="https://www.iut-lens.univ-artois.fr/" class="card-link gradient-custom-text" target="_blank"><i class="fas fa-globe"></i> Site de l'IUT de Lens</a>
                 </div>
             </div>
@@ -580,6 +593,16 @@
 
 
     <script src="static/js/index.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var maxHeight = 0;
+            $(".member-card .card-body").each(function(){
+                if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+            });
+            $(".member-card .card-body").height(maxHeight);
+        });
+    </script>
 
 </body>
 </html>
