@@ -594,5 +594,25 @@
         });
     </script>
 
+    <script>
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            const newColorScheme = event.matches ? "dark" : "light";
+            var cssCaller = document.getElementById("cssCaller");
+            var elements = document.getElementsByClassName("color-list");
+
+            if (newColorScheme === "dark") {
+                cssCaller.href = "static/css/mdb.dark.min.css";
+                for (var n = 0; n < elements.length; n++) {
+                    elements[n].style.color = "white";
+                }
+            } else {
+                cssCaller.href = "static/css/mdb.min.css";
+                for (var m = 0; m < elements.length; m++) {
+                    elements[m].style.color = "black";
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
