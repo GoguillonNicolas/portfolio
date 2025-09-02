@@ -58,8 +58,8 @@
             <button
                     class="navbar-toggler"
                     type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
@@ -115,12 +115,18 @@
 
                 </ul>
 
+                <!-- Centered Theme Icon for Mobile Dropdown (visible on mobile only) -->
+                <div class="d-lg-none d-flex align-items-center justify-content-center pt-3">
+                    <a class="text-reset" id="link-theme-mobile" onclick="toggleGlobalTheme()">
+                        <i class="fas fa-circle-half-stroke" style="color: #1A5360;"></i>
+                    </a>
+                </div>
 
             </div>
             <!-- Collapsible wrapper -->
 
-            <!-- Right elements -->
-            <div class="d-flex align-items-center">
+            <!-- Right elements (always visible on main bar) -->
+            <div class="d-flex align-items-center" id="main-theme-icon-container">
                 <a class="text-reset me-3" id="link-theme" onclick="toggleGlobalTheme()">
                     <i class="fas fa-circle-half-stroke" style="color: #1A5360;"></i>
                 </a>
